@@ -14,10 +14,9 @@ const Hero = (props) => (
       </SectionTitle>
 
       <SectionText>
-      I'm an aspiring software and web developer with experience in designing
-      and programming web applications. I am also interested in devops.
-      I am pursuing a Bachelors degree in Computer Science.
-      I live in Monroe, LA. I’m currently open to job position related, but not limited, to software, and web development.
+      I'm a software developer at Blue Cross and Blue Shield of Louisiana working with Database Technologies, C#, and . NET.
+      I have worked with front-end technologies such as HTML, CSS, JavaScript, Typescript, and popular frameworks like Angular, and React. 
+      I also have experience with C#, Java, .Net, SqlServer, Sql, and Asp.net Core.
       </SectionText>
 
       <Button onClick={()=> (window.open("https://www.github.com/Sital1", "_blank"))}> Lean More</Button>
