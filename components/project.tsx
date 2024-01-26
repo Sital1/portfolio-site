@@ -47,7 +47,7 @@ export default function Project({
               className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
             >
               <Link
-                href="#contact"
+                href={source}
                 className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
               >
                 Source{" "}
@@ -61,7 +61,7 @@ export default function Project({
               className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
             >
               <Link
-                href="#contact"
+                href={code}
                 className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
               >
                 Code{" "}
