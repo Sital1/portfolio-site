@@ -41,38 +41,40 @@ export default function Project({
             {description}
           </p>
 
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          {source !=="#" && <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
 
-            <li
-              className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
-            >
-              <Link
-                href={source}
-                className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-              >
-                Source{" "}
-                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-              </Link>
+<li
+  className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
+>
+  <Link
+    target="_blank"
+    href={source}
+    className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+  >
+    Source{" "}
+    <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+  </Link>
 
-            </li>
+</li>
 
 
-            <li
-              className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
-            >
-              <Link
-                href={code}
-                className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-              >
-                Code{" "}
-                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-              </Link>
+<li
+  className="bg-gray-900 text-white px-3 py-1 text-[0.9rem] uppercase tracking-wider text-white rounded-full"
+>
+  <Link
+    target="_blank"
+    href={code}
+    className="group bg-gray-900 text-white px-2 py-2 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+  >
+    Code{" "}
+    <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+  </Link>
 
-              
 
-            </li>
 
-          </ul>
+</li>
+
+</ul>}
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
